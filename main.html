@@ -1,0 +1,21 @@
+<html>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+    <title>Timestamp microservice</title>
+    <body>
+        <center><div class="header"><h1> API Basejump: Timestamp microservice</h1>
+            <center><div class="UserS">
+                <ol>User Stories<p>
+                    <ol>1) I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)<p>
+                    2) If it does, it returns both the Unix timestamp and the natural language form of that date.<p>
+                    3) If it does not contain a date or Unix timestamp, it returns null for those properties.<p>
+                    </ol></ol>
+                
+                </div></center>
+            <ol><h2>Example usage:</h2>
+                <code>https://unixtimestamp.herokuapp.com/December%2015,%202015</code><br>
+                <code>https://unixtimestamp.herokuapp.com/1450137600</code><br>
+                <h2>Example output:</h2>
+                <code>{ "unix": 1450137600, "natural": "December 15, 2015" }</code>
+            </ol></div></center></center>
+        
