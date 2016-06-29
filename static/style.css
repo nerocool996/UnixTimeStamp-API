@@ -1,0 +1,17 @@
+.header{
+    background: #eeeeee;
+    max-width: 800px;
+    text-align: left;
+    font-family:sans-serif;
+    color:#444;
+    min-height: 400px;
+}
+.userS{
+    background: #fff;
+    max-width: 90%;
+    text-align: left;
+    border-left: 5px solid #888;
+}
+code{
+    background: #fff;
+}

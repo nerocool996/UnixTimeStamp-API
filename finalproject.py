@@ -22,6 +22,14 @@ def is_number(s):
         return True
     except ValueError:
         return False
+
+@app.route('/')
+def mainpage():
+	return render_template('main.html')
+
+
+
+        
 @app.route('/<string:givdate>')
 def TimeStamp(givdate):
 	months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
@@ -52,7 +60,7 @@ def TimeStamp(givdate):
 		return jsonify({"unix":givdate,"natural":res})
 	
 	return "Wow"
-if __name__ == '__main__':
-	app.secret_key = 'super_secret_key'
-	app.debug = True
-	app.run(host = '0.0.0.0', port = 5000)
+##if __name__ == '__main__':
+app.secret_key = 'super_secret_key'
+app.debug = True
+##	app.run(host = '0.0.0.0', port = 5000)
